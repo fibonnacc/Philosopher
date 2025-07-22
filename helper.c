@@ -6,7 +6,7 @@
 /*   By: helfatih <helfatih@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/22 16:01:02 by helfatih          #+#    #+#             */
-/*   Updated: 2025/04/22 10:29:34 by helfatih         ###   ########.fr       */
+/*   Updated: 2025/07/22 17:39:32 by helfatih         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -106,7 +106,7 @@ int	check_and_creat_thread(t_data *data, int *i)
 		pthread_mutex_unlock(&data->writing);
 		return (1);
 	}
-	if (pthread_create(&(data->philo[*i].thread), NULL, my_routine,
+	if (pthread_create(&(data->philo[*i].thread), NULL, make_simulation,
 			&data->philo[*i]) != 0)
 	{
 		return (1);

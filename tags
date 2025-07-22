@@ -1,0 +1,156 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_OUTPUT_EXCMD	mixed	/number, pattern, mixed, or combineV2/
+!_TAG_OUTPUT_FILESEP	slash	/slash or backslash/
+!_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
+!_TAG_PATTERN_LENGTH_LIMIT	96	/0 for no limit/
+!_TAG_PROC_CWD	/home/helfatih/Documents/Philosopher/	//
+!_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
+!_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
+!_TAG_PROGRAM_URL	https://ctags.io/	/official site/
+!_TAG_PROGRAM_VERSION	5.9.0	//
+$(NAME)	Makefile	/^$(NAME): $(OBJECT)$/;"	t
+%.o	Makefile	/^%.o: %.c$/;"	t
+0	.vscode/c_cpp_properties.json	/^        ""$/;"	s	array:configurations.0.compilerArgs
+0	.vscode/c_cpp_properties.json	/^        "${workspaceFolder}\/**"$/;"	s	array:configurations.0.includePath
+0	.vscode/c_cpp_properties.json	/^    {$/;"	o	array:configurations
+0	.vscode/launch.json	/^        {$/;"	o	array:configurations.0.setupCommands
+0	.vscode/launch.json	/^    {$/;"	o	array:configurations
+0	.vscode/settings.json	/^    "*",$/;"	s	array:C_Cpp_Runner.includeSearch
+0	.vscode/settings.json	/^    "**\/build",$/;"	s	array:C_Cpp_Runner.excludeSearch
+0	.vscode/settings.json	/^    "-Wall",$/;"	s	array:C_Cpp_Runner.warnings
+0	.vscode/settings.json	/^    "\/W4",$/;"	s	array:C_Cpp_Runner.msvcWarnings
+1	.vscode/settings.json	/^    "**\/*"$/;"	s	array:C_Cpp_Runner.includeSearch
+1	.vscode/settings.json	/^    "**\/build\/**",$/;"	s	array:C_Cpp_Runner.excludeSearch
+1	.vscode/settings.json	/^    "-Wextra",$/;"	s	array:C_Cpp_Runner.warnings
+1	.vscode/settings.json	/^    "\/permissive-",$/;"	s	array:C_Cpp_Runner.msvcWarnings
+10	.vscode/settings.json	/^    "\/w14906",$/;"	s	array:C_Cpp_Runner.msvcWarnings
+11	.vscode/settings.json	/^    "\/w14263",$/;"	s	array:C_Cpp_Runner.msvcWarnings
+12	.vscode/settings.json	/^    "\/w44265",$/;"	s	array:C_Cpp_Runner.msvcWarnings
+13	.vscode/settings.json	/^    "\/w14928"$/;"	s	array:C_Cpp_Runner.msvcWarnings
+2	.vscode/settings.json	/^    "**\/.*",$/;"	s	array:C_Cpp_Runner.excludeSearch
+2	.vscode/settings.json	/^    "-Wpedantic",$/;"	s	array:C_Cpp_Runner.warnings
+2	.vscode/settings.json	/^    "\/w14242",$/;"	s	array:C_Cpp_Runner.msvcWarnings
+3	.vscode/settings.json	/^    "**\/.*\/**",$/;"	s	array:C_Cpp_Runner.excludeSearch
+3	.vscode/settings.json	/^    "-Wshadow",$/;"	s	array:C_Cpp_Runner.warnings
+3	.vscode/settings.json	/^    "\/w14287",$/;"	s	array:C_Cpp_Runner.msvcWarnings
+4	.vscode/settings.json	/^    "**\/.vscode",$/;"	s	array:C_Cpp_Runner.excludeSearch
+4	.vscode/settings.json	/^    "-Wformat=2",$/;"	s	array:C_Cpp_Runner.warnings
+4	.vscode/settings.json	/^    "\/w14296",$/;"	s	array:C_Cpp_Runner.msvcWarnings
+5	.vscode/settings.json	/^    "**\/.vscode\/**"$/;"	s	array:C_Cpp_Runner.excludeSearch
+5	.vscode/settings.json	/^    "-Wcast-align",$/;"	s	array:C_Cpp_Runner.warnings
+5	.vscode/settings.json	/^    "\/w14311",$/;"	s	array:C_Cpp_Runner.msvcWarnings
+6	.vscode/settings.json	/^    "-Wconversion",$/;"	s	array:C_Cpp_Runner.warnings
+6	.vscode/settings.json	/^    "\/w14826",$/;"	s	array:C_Cpp_Runner.msvcWarnings
+7	.vscode/settings.json	/^    "-Wsign-conversion",$/;"	s	array:C_Cpp_Runner.warnings
+7	.vscode/settings.json	/^    "\/w44062",$/;"	s	array:C_Cpp_Runner.msvcWarnings
+8	.vscode/settings.json	/^    "-Wnull-dereference"$/;"	s	array:C_Cpp_Runner.warnings
+8	.vscode/settings.json	/^    "\/w44242",$/;"	s	array:C_Cpp_Runner.msvcWarnings
+9	.vscode/settings.json	/^    "\/w14905",$/;"	s	array:C_Cpp_Runner.msvcWarnings
+CC	Makefile	/^CC = cc$/;"	m
+CFLAGS	Makefile	/^CFLAGS = -Wall -Wextra -Werror -g$/;"	m
+C_Cpp_Runner.cCompilerPath	.vscode/settings.json	/^  "C_Cpp_Runner.cCompilerPath": "gcc",$/;"	s
+C_Cpp_Runner.cStandard	.vscode/settings.json	/^  "C_Cpp_Runner.cStandard": "",$/;"	s
+C_Cpp_Runner.compilerArgs	.vscode/settings.json	/^  "C_Cpp_Runner.compilerArgs": [],$/;"	a
+C_Cpp_Runner.cppCompilerPath	.vscode/settings.json	/^  "C_Cpp_Runner.cppCompilerPath": "g++",$/;"	s
+C_Cpp_Runner.cppStandard	.vscode/settings.json	/^  "C_Cpp_Runner.cppStandard": "",$/;"	s
+C_Cpp_Runner.debuggerPath	.vscode/settings.json	/^  "C_Cpp_Runner.debuggerPath": "gdb",$/;"	s
+C_Cpp_Runner.enableWarnings	.vscode/settings.json	/^  "C_Cpp_Runner.enableWarnings": true,$/;"	b
+C_Cpp_Runner.excludeSearch	.vscode/settings.json	/^  "C_Cpp_Runner.excludeSearch": [$/;"	a
+C_Cpp_Runner.includePaths	.vscode/settings.json	/^  "C_Cpp_Runner.includePaths": [],$/;"	a
+C_Cpp_Runner.includeSearch	.vscode/settings.json	/^  "C_Cpp_Runner.includeSearch": [$/;"	a
+C_Cpp_Runner.linkerArgs	.vscode/settings.json	/^  "C_Cpp_Runner.linkerArgs": [],$/;"	a
+C_Cpp_Runner.msvcBatchPath	.vscode/settings.json	/^  "C_Cpp_Runner.msvcBatchPath": "",$/;"	s
+C_Cpp_Runner.msvcSecureNoWarnings	.vscode/settings.json	/^  "C_Cpp_Runner.msvcSecureNoWarnings": false$/;"	b
+C_Cpp_Runner.msvcWarnings	.vscode/settings.json	/^  "C_Cpp_Runner.msvcWarnings": [$/;"	a
+C_Cpp_Runner.showCompilationTime	.vscode/settings.json	/^  "C_Cpp_Runner.showCompilationTime": false,$/;"	b
+C_Cpp_Runner.useAddressSanitizer	.vscode/settings.json	/^  "C_Cpp_Runner.useAddressSanitizer": false,$/;"	b
+C_Cpp_Runner.useLeakSanitizer	.vscode/settings.json	/^  "C_Cpp_Runner.useLeakSanitizer": false,$/;"	b
+C_Cpp_Runner.useLinkTimeOptimization	.vscode/settings.json	/^  "C_Cpp_Runner.useLinkTimeOptimization": false,$/;"	b
+C_Cpp_Runner.useMsvc	.vscode/settings.json	/^  "C_Cpp_Runner.useMsvc": false,$/;"	b
+C_Cpp_Runner.useUndefinedSanitizer	.vscode/settings.json	/^  "C_Cpp_Runner.useUndefinedSanitizer": false,$/;"	b
+C_Cpp_Runner.warnings	.vscode/settings.json	/^  "C_Cpp_Runner.warnings": [$/;"	a
+C_Cpp_Runner.warningsAsError	.vscode/settings.json	/^  "C_Cpp_Runner.warningsAsError": false,$/;"	b
+MIMode	.vscode/launch.json	/^      "MIMode": "gdb",$/;"	s	object:configurations.0
+NAME	Makefile	/^NAME = philo$/;"	m
+NUM_PHILO	philo.h	/^# define NUM_PHILO /;"	d
+OBJECT	Makefile	/^OBJECT = $(SRC:.c=.o)$/;"	m
+PHILO_H	philo.h	/^# define PHILO_H$/;"	d
+Philosopher	README.md	/^# Philosopher/;"	c
+RM	Makefile	/^RM = rm -f$/;"	m
+SRC	Makefile	/^SRC = philo.c	helper.c initialize_data.c	creat_thread.c	take_actions.c$/;"	m
+all	Makefile	/^all: $(NAME)$/;"	t
+args	.vscode/launch.json	/^      "args": [],$/;"	a	object:configurations.0
+cStandard	.vscode/c_cpp_properties.json	/^      "cStandard": "${default}",$/;"	s	object:configurations.0
+check	philo.h	/^	pthread_mutex_t	check;$/;"	m	struct:s_data	typeref:typename:pthread_mutex_t
+check_and_creat_thread	helper.c	/^int	check_and_creat_thread(t_data *data, int *i)$/;"	f	typeref:typename:int
+check_and_unlock1	take_actions.c	/^int	check_and_unlock1(t_philo *philo)$/;"	f	typeref:typename:int
+check_and_unlock2	take_actions.c	/^int	check_and_unlock2(t_philo *philo)$/;"	f	typeref:typename:int
+check_death	creat_thread.c	/^int   check_death(t_data *data)$/;"	f	typeref:typename:int
+check_if_all_eat	philo.c	/^int	check_if_all_eat(t_data *data, int *enough)$/;"	f	typeref:typename:int
+check_if_someone_death	helper.c	/^int	check_if_someone_death(t_data *data, int *i)$/;"	f	typeref:typename:int
+check_my_argument	philo.c	/^int	check_my_argument(char **av)$/;"	f	typeref:typename:int
+clean	Makefile	/^clean:$/;"	t
+clean_all	philo.c	/^void	clean_all(t_data *data)$/;"	f	typeref:typename:void
+compilerArgs	.vscode/c_cpp_properties.json	/^      "compilerArgs": [$/;"	a	object:configurations.0
+compilerPath	.vscode/c_cpp_properties.json	/^      "compilerPath": "\/usr\/bin\/gcc",$/;"	s	object:configurations.0
+configurations	.vscode/c_cpp_properties.json	/^  "configurations": [$/;"	a
+configurations	.vscode/launch.json	/^  "configurations": [$/;"	a
+cppStandard	.vscode/c_cpp_properties.json	/^      "cppStandard": "${default}",$/;"	s	object:configurations.0
+creat_thread	creat_thread.c	/^int	creat_thread(t_data *data)$/;"	f	typeref:typename:int
+cwd	.vscode/launch.json	/^      "cwd": "\/home\/helfatih\/Documents\/Philosopher",$/;"	s	object:configurations.0
+data	philo.h	/^	struct s_data	*data;$/;"	m	struct:s_philo	typeref:struct:s_data *
+death_check	philo.h	/^	pthread_mutex_t	death_check;$/;"	m	struct:s_data	typeref:typename:pthread_mutex_t
+description	.vscode/launch.json	/^          "description": "Enable pretty-printing for gdb",$/;"	s	object:configurations.0.setupCommands.0
+externalConsole	.vscode/launch.json	/^      "externalConsole": false,$/;"	b	object:configurations.0
+fclean	Makefile	/^fclean: clean$/;"	t
+forks	philo.h	/^	pthread_mutex_t	*forks;$/;"	m	struct:s_data	typeref:typename:pthread_mutex_t *
+ft_atoi	helper.c	/^int	ft_atoi(char *str)$/;"	f	typeref:typename:int
+ft_usleep	creat_thread.c	/^void  ft_usleep(long time, t_philo *philo)$/;"	f	typeref:typename:void
+get_time	initialize_data.c	/^long	get_time(void)$/;"	f	typeref:typename:long
+id	philo.h	/^	int				id;$/;"	m	struct:s_philo	typeref:typename:int
+ignoreFailures	.vscode/launch.json	/^          "ignoreFailures": true$/;"	b	object:configurations.0.setupCommands.0
+includePath	.vscode/c_cpp_properties.json	/^      "includePath": [$/;"	a	object:configurations.0
+init_small_data	helper.c	/^void	init_small_data(t_data *data, char **av)$/;"	f	typeref:typename:void
+initialize_data	initialize_data.c	/^int	initialize_data(t_data *data, int ac, char **av)$/;"	f	typeref:typename:int
+initialize_philosophers	initialize_data.c	/^void	initialize_philosophers(t_data *data)$/;"	f	typeref:typename:void
+intelliSenseMode	.vscode/c_cpp_properties.json	/^      "intelliSenseMode": "linux-gcc-x64",$/;"	s	object:configurations.0
+is_number	helper.c	/^int	is_number(char *str)$/;"	f	typeref:typename:int
+last_meals	philo.h	/^	long			last_meals;$/;"	m	struct:s_philo	typeref:typename:long
+last_meals_lock	philo.h	/^	pthread_mutex_t	last_meals_lock;$/;"	m	struct:s_philo	typeref:typename:pthread_mutex_t
+left_fork	philo.h	/^	pthread_mutex_t	*left_fork;$/;"	m	struct:s_philo	typeref:typename:pthread_mutex_t *
+main	philo.c	/^int	main(int ac, char **av)$/;"	f	typeref:typename:int
+make_simulation	creat_thread.c	/^void	*make_simulation(void *arg)$/;"	f	typeref:typename:void *
+meal_count	philo.h	/^	int				meal_count;$/;"	m	struct:s_philo	typeref:typename:int
+miDebuggerPath	.vscode/launch.json	/^      "miDebuggerPath": "gdb",$/;"	s	object:configurations.0
+monitore_deaths	creat_thread.c	/^void	*monitore_deaths(void *arg)$/;"	f	typeref:typename:void *
+name	.vscode/c_cpp_properties.json	/^      "name": "linux-gcc-x64",$/;"	s	object:configurations.0
+name	.vscode/launch.json	/^      "name": "C\/C++ Runner: Debug Session",$/;"	s	object:configurations.0
+num_of_times_to_eat	philo.h	/^	int				num_of_times_to_eat;$/;"	m	struct:s_data	typeref:typename:int
+num_philosopher	philo.h	/^	int				num_philosopher;$/;"	m	struct:s_data	typeref:typename:int
+philo	philo.h	/^	t_philo			*philo;$/;"	m	struct:s_data	typeref:typename:t_philo *
+print_lock	creat_thread.c	/^void	print_lock(char *format, t_philo *philo)$/;"	f	typeref:typename:void
+program	.vscode/launch.json	/^      "program": "\/home\/helfatih\/Documents\/Philosopher\/build\/Debug\/outDebug",$/;"	s	object:configurations.0
+put_down_the_forks	take_actions.c	/^void	put_down_the_forks(t_philo *philo)$/;"	f	typeref:typename:void
+re	Makefile	/^re: clean all$/;"	t
+request	.vscode/launch.json	/^      "request": "launch",$/;"	s	object:configurations.0
+right_fork	philo.h	/^	pthread_mutex_t	*right_fork;$/;"	m	struct:s_philo	typeref:typename:pthread_mutex_t *
+s_data	philo.h	/^typedef struct s_data$/;"	s
+s_philo	philo.h	/^typedef struct s_philo$/;"	s
+setupCommands	.vscode/launch.json	/^      "setupCommands": [$/;"	a	object:configurations.0
+someone_died	philo.h	/^	int				someone_died;$/;"	m	struct:s_data	typeref:typename:int
+start_time	philo.h	/^	long			start_time;$/;"	m	struct:s_data	typeref:typename:long
+stopAtEntry	.vscode/launch.json	/^      "stopAtEntry": false,$/;"	b	object:configurations.0
+t_data	philo.h	/^}					t_data;$/;"	t	typeref:struct:s_data
+t_philo	philo.h	/^}					t_philo;$/;"	t	typeref:struct:s_philo
+take_forks	take_actions.c	/^void	take_forks(t_philo *philo)$/;"	f	typeref:typename:void
+text	.vscode/launch.json	/^          "text": "-enable-pretty-printing",$/;"	s	object:configurations.0.setupCommands.0
+thread	philo.h	/^	pthread_t		thread;$/;"	m	struct:s_philo	typeref:typename:pthread_t
+time_to_die	philo.h	/^	long			time_to_die;$/;"	m	struct:s_data	typeref:typename:long
+time_to_eat	philo.h	/^	int				time_to_eat;$/;"	m	struct:s_data	typeref:typename:int
+time_to_sleep	philo.h	/^	int				time_to_sleep;$/;"	m	struct:s_data	typeref:typename:int
+type	.vscode/launch.json	/^      "type": "cppdbg",$/;"	s	object:configurations.0
+update_last_meal	take_actions.c	/^void	update_last_meal(t_philo *philo)$/;"	f	typeref:typename:void
+version	.vscode/c_cpp_properties.json	/^  "version": 4$/;"	n
+version	.vscode/launch.json	/^  "version": "0.2.0",$/;"	s
+writing	philo.h	/^	pthread_mutex_t	writing;$/;"	m	struct:s_data	typeref:typename:pthread_mutex_t

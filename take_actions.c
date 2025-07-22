@@ -6,7 +6,7 @@
 /*   By: helfatih <helfatih@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/09 17:26:11 by helfatih          #+#    #+#             */
-/*   Updated: 2025/04/20 12:04:26 by helfatih         ###   ########.fr       */
+/*   Updated: 2025/07/22 18:57:21 by helfatih         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,10 +27,20 @@ void	update_last_meal(t_philo *philo)
 
 void	take_forks(t_philo *philo)
 {
-	pthread_mutex_lock(philo->left_fork);
-	print_lock("%d has taken a fork\n", philo);
-	pthread_mutex_lock(philo->right_fork);
-	print_lock("%d has taken a fork\n", philo);
+	if (philo->left_fork < philo->right_fork)
+	{
+		pthread_mutex_lock(philo->left_fork);
+		print_lock("%d has taken a fork\n", philo);
+		pthread_mutex_lock(philo->right_fork);
+		print_lock("%d has taken a fork\n", philo);
+	}
+	else
+	{
+		pthread_mutex_lock(philo->right_fork);
+		print_lock("%d has taken a fork\n", philo);
+		pthread_mutex_lock(philo->left_fork);
+		print_lock("%d has taken a fork\n", philo);
+	}
 }
 
 int	check_and_unlock1(t_philo *philo)
