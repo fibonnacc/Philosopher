@@ -27,7 +27,7 @@ void	update_last_meal(t_philo *philo)
 
 void	take_forks(t_philo *philo)
 {
-	if (philo->left_fork < philo->right_fork)
+	if (philo->id % 2 == 0)
 	{
 		pthread_mutex_lock(philo->left_fork);
 		print_lock("%d has taken a fork\n", philo);

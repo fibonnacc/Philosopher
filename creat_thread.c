@@ -12,15 +12,6 @@
 
 #include "philo.h"
 
-// int	check_death(t_data *data)
-// {
-// 	int	dead;
-
-// 	pthread_mutex_lock(&data->death_check);
-// 	dead = data->someone_died;
-// 	pthread_mutex_unlock(&data->death_check);
-// 	return (dead);
-// }
 void	print_lock(char *format, t_philo *philo)
 {
 	pthread_mutex_lock(&philo->data->death_check);
@@ -50,7 +41,7 @@ void	ft_usleep(long time, t_philo *philo)
 			return ;
 		}
 		pthread_mutex_unlock(&philo->data->death_check);
-		usleep(100);
+		usleep(1000);
 	}
 }
 
@@ -59,12 +50,10 @@ void	*make_simulation(void *arg)
 	t_philo	*philo;
 
 	philo = (t_philo *)arg;
-	if (philo->id % 2 != 0)
+	if ((philo->id - 1) % 2)
 		usleep(3000);
 	while (1)
 	{
-		print_lock("%d is thinking\n", philo);
-		usleep(100);
 		if ((check_and_unlock2(philo)) == 1)
 			return (NULL);
 		take_forks(philo);
@@ -78,8 +67,17 @@ void	*make_simulation(void *arg)
 			return (NULL);
 		put_down_the_forks(philo);
 		print_lock("%d is sleeping\n", philo);
-		ft_usleep(philo->data->time_to_sleep, philo);
-	}
+    ft_usleep(philo->data->time_to_sleep, philo);
+    print_lock("%d is thinking\n", philo);
+    if (philo->data->num_philosopher % 2)
+    {
+      if (philo->id % 2)
+      {
+        if (philo->data->time_to_eat >= philo->data->time_to_sleep)
+          usleep((philo->data->time_to_eat - philo->data->time_to_sleep + 10) * 1000);
+      }
+    }
+  }
 	return (NULL);
 }
 
