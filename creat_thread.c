@@ -6,7 +6,7 @@
 /*   By: helfatih <helfatih@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/06 10:36:52 by helfatih          #+#    #+#             */
-/*   Updated: 2025/07/22 19:06:52 by helfatih         ###   ########.fr       */
+/*   Updated: 2025/07/24 09:58:00 by helfatih         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ void	print_lock(char *format, t_philo *philo)
 	if (philo->data->someone_died)
 	{
 		pthread_mutex_unlock(&philo->data->death_check);
-		return;
+		return ;
 	}
 	pthread_mutex_unlock(&philo->data->death_check);
 	pthread_mutex_lock(&philo->data->writing);
@@ -50,7 +50,7 @@ void	*make_simulation(void *arg)
 	t_philo	*philo;
 
 	philo = (t_philo *)arg;
-	if ((philo->id - 1) % 2)
+	if (philo->id % 2)
 		usleep(3000);
 	while (1)
 	{
@@ -67,17 +67,10 @@ void	*make_simulation(void *arg)
 			return (NULL);
 		put_down_the_forks(philo);
 		print_lock("%d is sleeping\n", philo);
-    ft_usleep(philo->data->time_to_sleep, philo);
-    print_lock("%d is thinking\n", philo);
-    if (philo->data->num_philosopher % 2)
-    {
-      if (philo->id % 2)
-      {
-        if (philo->data->time_to_eat >= philo->data->time_to_sleep)
-          usleep((philo->data->time_to_eat - philo->data->time_to_sleep + 10) * 1000);
-      }
-    }
-  }
+		ft_usleep(philo->data->time_to_sleep, philo);
+		print_lock("%d is thinking\n", philo);
+		condition_1(philo);
+	}
 	return (NULL);
 }
 
@@ -118,9 +111,7 @@ int	creat_thread(t_data *data)
 	while (i < data->num_philosopher)
 	{
 		if (check_and_creat_thread(data, &i) == 1)
-		{
 			return (1);
-		}
 		i++;
 	}
 	if (pthread_create(&monitor, NULL, monitore_deaths, data) != 0)

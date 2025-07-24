@@ -6,7 +6,7 @@
 /*   By: helfatih <helfatih@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/24 11:36:09 by helfatih          #+#    #+#             */
-/*   Updated: 2025/04/22 09:40:23 by helfatih         ###   ########.fr       */
+/*   Updated: 2025/07/24 09:58:16 by helfatih         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,6 +43,19 @@ long	get_time(void)
 
 	gettimeofday(&tv, NULL);
 	return ((tv.tv_sec * 1000) + (tv.tv_usec / 1000));
+}
+
+void	condition_1(t_philo *philo)
+{
+	if (philo->data->num_philosopher % 2)
+	{
+		if (philo->id % 2)
+		{
+			if (philo->data->time_to_eat >= philo->data->time_to_sleep)
+				usleep((philo->data->time_to_eat - philo->data->time_to_sleep
+						+ 10) * 1000);
+		}
+	}
 }
 
 void	initialize_philosophers(t_data *data)

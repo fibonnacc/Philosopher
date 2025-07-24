@@ -6,7 +6,7 @@
 /*   By: helfatih <helfatih@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/19 09:10:57 by helfatih          #+#    #+#             */
-/*   Updated: 2025/07/22 17:38:51 by helfatih         ###   ########.fr       */
+/*   Updated: 2025/07/24 09:58:41 by helfatih         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,8 +19,8 @@
 # include <pthread.h>
 # include <stdio.h>
 # include <stdlib.h>
-# include <sys/time.h>
 # include <string.h>
+# include <sys/time.h>
 # include <unistd.h>
 
 typedef struct s_philo
@@ -51,7 +51,8 @@ typedef struct s_data
 	t_philo			*philo;
 }					t_data;
 
-void        *make_simulation(void *arg);
+void				condition_1(t_philo *philo);
+void				*make_simulation(void *arg);
 int					ft_atoi(char *str);
 int					is_number(char *str);
 int					check_my_argument(char **av);
