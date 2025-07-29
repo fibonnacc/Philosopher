@@ -1,19 +1,7 @@
-/* ************************************************************************** */
-/*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   philo.h                                            :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: helfatih <helfatih@student.42.fr>          +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/03/19 09:10:57 by helfatih          #+#    #+#             */
-/*   Updated: 2025/07/24 09:58:41 by helfatih         ###   ########.fr       */
-/*                                                                            */
-/* ************************************************************************** */
-
 #ifndef PHILO_H
 # define PHILO_H
 
-# define NUM_PHILO 400
+# define NUM_PHILO 200
 
 # include <limits.h>
 # include <pthread.h>
@@ -59,7 +47,6 @@ int					check_my_argument(char **av);
 int					initialize_data(t_data *data, int ac, char **av);
 void				initialize_philosophers(t_data *data);
 int					creat_thread(t_data *data);
-void				*my_routine(void *arg);
 long				get_time(void);
 void				clean_all(t_data *data);
 void				*monitore_deaths(void *arg);

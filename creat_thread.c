@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   creat_thread.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: helfatih <helfatih@student.42.fr>          +#+  +:+       +#+        */
+/*   By: helfatih <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/04/06 10:36:52 by helfatih          #+#    #+#             */
-/*   Updated: 2025/07/24 09:58:00 by helfatih         ###   ########.fr       */
+/*   Created: 2025/07/29 21:47:02 by helfatih          #+#    #+#             */
+/*   Updated: 2025/07/29 21:47:22 by helfatih         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -84,14 +84,14 @@ void	*monitore_deaths(void *arg)
 	while (1)
 	{
 		i = 0;
-		enough = 0;
+		enough = 1;
 		while (i < data->num_philosopher)
 		{
 			if ((check_if_someone_death(data, &i)) == 1)
 				return (NULL);
 			pthread_mutex_lock(&data->philo[i].last_meals_lock);
-			if (data->philo[i].meal_count >= data->num_of_times_to_eat)
-				enough = 1;
+			if (data->philo[i].meal_count < data->num_of_times_to_eat)
+				enough = 0;
 			pthread_mutex_unlock(&data->philo[i].last_meals_lock);
 			i++;
 		}

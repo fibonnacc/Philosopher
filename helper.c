@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   helper.c                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: helfatih <helfatih@student.42.fr>          +#+  +:+       +#+        */
+/*   By: helfatih <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/03/22 16:01:02 by helfatih          #+#    #+#             */
-/*   Updated: 2025/07/22 17:39:32 by helfatih         ###   ########.fr       */
+/*   Created: 2025/07/29 21:47:33 by helfatih          #+#    #+#             */
+/*   Updated: 2025/07/29 21:47:39 by helfatih         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,9 +22,7 @@ int	ft_atoi(char *str)
 	res = 0;
 	s = 1;
 	if (!str)
-	{
-		exit(1);
-	}
+		return (-1);
 	if (str[i] == '+')
 	{
 		s = 1;
@@ -34,7 +32,7 @@ int	ft_atoi(char *str)
 	{
 		res = res * 10 + (str[i] - '0');
 		if (res > INT_MAX || res < INT_MIN)
-			exit(1);
+			return (-1);
 		i++;
 	}
 	return ((int)(res * s));
@@ -72,7 +70,7 @@ int	check_if_someone_death(t_data *data, int *i)
 	if ((current_time) >= data->time_to_die)
 	{
 		pthread_mutex_lock(&data->writing);
-		printf("%ld philo %d died\n", (get_time() - data->start_time),
+		printf("%ld %d died\n", (get_time() - data->start_time),
 			data->philo[*i].id);
 		pthread_mutex_unlock(&data->writing);
 		pthread_mutex_lock(&data->death_check);
@@ -85,7 +83,7 @@ int	check_if_someone_death(t_data *data, int *i)
 
 void	init_small_data(t_data *data, char **av)
 {
-	data->num_philosopher = atoi(av[1]);
+	data->num_philosopher = ft_atoi(av[1]);
 	data->time_to_die = ft_atoi(av[2]);
 	data->time_to_eat = ft_atoi(av[3]);
 	data->time_to_sleep = ft_atoi(av[4]);
